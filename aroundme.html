@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <title>Around Me</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-2">
+      Find Nearby
+    </div>
+    <div class="col-md-3">
+      within
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+
+
+
+      <select onchange="getLocations();" id="interest" class="form-control">
+        <option value="default">Select your interest</option>
+        <option value="atm">ATM</option>
+        <option value="beauty_salon">Beauty Parlor</option>
+        <option value="church">Church</option>
+        <option value="doctor">Doctor</option>
+        <option value="parking">Parking</option>
+        <option value="library">Library</option>
+        <option value="restaurant">Restaurant</option>
+
+
+      </select>
+
+    </div>
+
+    <div class="col-md-2">
+      <select onchange="getLocations();" id="distance" class="form-control">
+
+        <option value="500" selected>500</option>
+
+        <option value="1000">1000</option>
+
+        <option value="1500">1500</option>
+
+        <option value="2000">2000</option>
+
+      </select>
+    </div>
+
+    meters
+
+  </div>
+
+  <div id="mapArea" style="width:600px;height:600px"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqP8lpRkXXm5ahYT-1ekyFs1YTh5OmXbQ&libraries=places"></script>
+  <script src="js/aroundme.js"></script>
+
+</body>
+
+</html>
